@@ -13,5 +13,5 @@ ADD target/common-mail-service-0.0.1-SNAPSHOT.jar /common-mail-service.jar
 # 运行jar包
 RUN bash -c 'touch /common-mail-service.jar'
 ENV TZ 'Asia/Shanghai'
-EXPOSE 8089
+EXPOSE 80
 ENTRYPOINT ["java","-jar","/common-mail-service.jar"]
